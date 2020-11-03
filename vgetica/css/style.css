@@ -1,0 +1,33 @@
+.nav-item {
+	width: 100%;
+	height: 100%;
+}
+#navSlova {
+	font-size: 3.2em;
+	padding-left: 3%;
+}
+.navbar-nav li {
+	padding-left: 5%;
+}
+#reg {
+	padding-top: 8%;
+}
+#user_error, #pass_error {
+	display: none;
+}
+#os,#ar{
+	width: 100%;
+}
+#kockica{
+	margin-left: 36px;
+}
+#ko{
+	margin-right: 2em;
+}
+.form-check{
+	padding-left: 0px;
+	padding-bottom: 8px;
+}
+.form-check label{
+	padding-left: 18px;
+}

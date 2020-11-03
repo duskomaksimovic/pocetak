@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>VGobe</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+  <div class="container-fluid">
+    <!-- <nav class="navbar navbar-dark bg-dark">
+        <a class="navbar-brand" href="./pocetna_index.html">
+         <img src="pic/VGlobe.jpg" width="130" height="130" alt="VGlobe">
+      </a>
+    </nav> -->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="  navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+     <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <a class="navbar-brand" href="./pocetna_index.html">
+         <img src="pic/VGlobe.jpg" width="130" height="130" alt="VGlobe">
+      </a>
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0" id="navSlova">
+           <li class="nav-item ">
+              <a class="nav-link" href="pocetna_index.html">Početna<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+               <a class="nav-link" href="porudzbine.html">Porudžbine</a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="pregledi.html">Pregledi</a>
+           </li>
+           <li class="nav-item">
+               <a class="nav-link" href="unos.html">Unos</a>
+            </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0" action= "" accept-charset="utf-8" method="post" name="lout" id="lout" onsubmit="timer()"> 
+          <button class="btn btn-inline-primary my-2 my-sm-0" type="submit" >Log out
+          </button>
+        </form>
+        <script type="text/javascript" src="./js/testLog.js"></script>
+        
+      </div>
+    </nav>
+   </div>
+
+   <!-- UNOS KLIJENATA -->
+        <div class="panel-body">
+          <div class="row col-lg-12" id="REG">
+      <!-- POCETAK UK -->
+            <div class="col-md-6">
+            <div class="panel panel-dark" id="UK">
+                
+                <div class="panel-heading text-left">
+                  <h1>Unos klijenata</h1>
+                </div>
+                <div class="panel-body">
+                  
+                <form action="./js/konekcija.php" method="post">
+                    <div class="form-group">
+                       <label for="ime">Ime</label>
+                         <input type="text" class="form-control" id="ime" name="ime" />
+                      </div>
+                      <div class="form-group">
+                      <label for="prezime">Prezime</label>
+                      <input type="text" class="form-control" id="prezime" name="prezime" />
+                    </div>
+                    <div class="form-group">
+                        <label for="adresa">Adresa</label>
+                        <input type="text" class="form-control" id="adresa" name="adresa" />
+                    </div>
+                    <div class="form-group">
+                        <label for="grad">Grad</label>
+                        <input type="text" class="form-control" id="grad" name="grad" />
+                    </div>
+                    <div class="form-group">
+                      <label for="telefon">Kontakt telefon</label>
+                        <input type="number" class="form-control" id="telefon" name="telefon" />
+                      </div>
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                         <input type="email" class="form-control" id="email" name="email" />
+                    </div>
+                    <div class="form-group">
+                      <label for="pol">Pol:</label>
+                        <div>
+                          <label for="male" class="radio-inline"><input type="radio" name="pol" value="m" id="male">Musko</label>
+                          <label for="female" class="radio-inline"><input type="radio" name="pol" value="z" id="female">Zensko</label>
+                        </div>
+                      </div>
+                    <div>
+                        <input type="submit" class="btn btn-primary" value="Prijavi">
+                    </div>
+                </form>
+                    </div>
+                  
+
+              </div><!-- KRAJ UK -->
+              </div>
+
+       <!-- UNOS ARTIKALA        -->
+              <div class="col-md-6">
+              <div class="panel panel-dark" id="UA">
+                <div class="panel-heading text-left">
+                  <h1>Artikli</h1>
+                </div>
+                <div class="panel-body">
+                  
+
+                   <form action="./js/kon_artikal.php" method="post">
+                     
+
+                      <legend  class="scheduler-border">Atrikl</legend>
+                        <div class="form-group">
+                          <label for="nazivArtikla">Naziv artikla</label>
+                          <input type="text" class="form-control" id="nazivArtikla" name="nazivArtikla" />
+                        </div>
+                        <div class="form-group">
+                           <label for="cena">Cena</label>
+                           <input type="number" class="form-control" id="cena" name="cena" />
+                        </div> 
+
+                        
+
+                <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="luda1">
+                            <label class="form-check-label" for="luda1">spakovano</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="luda2">
+                            <label class="form-check-label" for="luda2">poslano</label>
+                        </div>
+             
+
+                
+
+                <div>
+                          <input type="submit" class="btn btn-primary" value="Prijavi">
+                      </div>
+              </form><!--  KRAJ AR FORME -->
+                      
+                  </div>    
+              </div><!-- KRAJ UA -->
+              </div>
+            </div> <!-- KRAJ REG -->
+        </div>
+           <div class="panel-footer text-right">
+                <small>&copy; VGlobe</small>  
+             </div>
+  
+
+</body>
+</html>

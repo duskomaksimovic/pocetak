@@ -1,0 +1,22 @@
+// CITANJE JSON FAJLA
+window.onload = function(){
+	var b = document.getElementById('getBtn');
+	
+	b.addEventListener("click",function(){
+		var xhttp = new XMLHttpRequest();
+
+		xhttp.onreadystatechange = function(){
+			if(xhttp.readyState == 4 && xhttp.status == 200){
+
+				var jsonPerson = JSON.parse(xhttp.responseText);
+
+				document.getElementById('contentContainer').innerHTML = "first name: "+jsonPerson.firstName + "<br>" 
+				+ "last name: " + jsonPerson.lastName + "<br>" + "hair color: " + jsonPerson.hairColor  ; 
+
+				}
+
+			}
+			xhttp.open("GET", "data.json", true);
+			xhttp.send();		
+		});
+}

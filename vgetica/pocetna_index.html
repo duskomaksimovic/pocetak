@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>VGobe</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+ 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  	<link rel="stylesheet" type="text/css" href="./css/style.css">
+   
+  	
+</head>
+<body>
+	<div class="container-fluid">
+		
+	   <div class="panel panel-dark">
+	   	<div class="panel-heading">
+		    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="	navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+    			   <span class="navbar-toggler-icon"></span>
+  			  </button>
+ 		      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+    		     <a class="navbar-brand" href="./pocetna_index.html">
+   			        <img src="pic/VGlobe.jpg" width="130" height="130" alt="VGlobe">
+ 		 	       </a>
+    		      <ul class="navbar-nav mr-auto mt-2 mt-lg-0" id="navSlova">
+     			     <li class="nav-item active">
+       		 		    <a class="nav-link" href="pocetna_index.html">Početna<span class="sr-only">(current)</span></a>
+      			   </li>
+      			   <li class="nav-item">
+       				   <a class="nav-link disabled" href="porudzbine.html">Porudžbine</a>
+      			   </li>
+      			   <li class="nav-item">
+       				   <a class="nav-link disabled" href="pregledi.html">Pregledi</a>
+     			     </li>
+     			     <li class="nav-item ">
+       				   <a class="nav-link disabled" href="unos1.html">Unos</a>
+      			   </li>
+    		      </ul>
+    		      <form class="form-inline my-2 my-lg-0" action= "" accept-charset="utf-8" method="post" name="form" id="form" onsubmit="prolaz()" >
+                <div class="font">
+                  <input class="form-control mr-sm-2" id="ulog" name="ulog" type="text" placeholder="user name" aria-label="user">
+            <!-- <div id="user_error">!</div> -->
+            
+                   <input class="form-control mr-sm-2" id="plog" name="plog" type="text" placeholder="password" aria-label="pass">
+            <!-- <div id="pass_error">!</div> -->
+                  <button class="btn btn-inline-success my-2 my-sm-0" type="submit" >Log in</button>
+                </div>
+      			
+    		      </form>
+            <script type="text/javascript" src="./js/testLog.js"></script>
+  	 	    </div>
+		    </nav>
+		  </div>
+   
+
+			<div class="panel-body">
+		    <div class="row col-lg-12 text-center">
+			    <div class="panel panel-dark col-lg-12">
+				    <div class="panel-heading text-center" id="vozdrica">
+					   <h1 id="vozdricah1">Vozdrica!!!</h1>
+				    </div>
+				    <div class="panel-body text-center">
+					
+				      <h2 id="vozlog">Ulogij se, pa da pocnemo...</h2>
+				    </div>
+				    <div id="poruka">
+              
+            </div>
+				
+			    </div>
+			  </div>
+      </div>
+			<div class="panel-footer text-right">
+          <small>&copy; VGlobe</small>  
+      </div>
+
+		</div>
+		
+  </div>
+
+
+
+</body>
+</html>
